@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled, { keyframes } from "styled-components";
 import { withTheme } from "styled-components";
 import logo from "./assets/theme-provider-logo.png"
@@ -7,7 +7,7 @@ type HeaderPropsType = {
   logo: string
 }
 
-const Header = (props: HeaderPropsType) => {
+const Header: FC<HeaderPropsType> = (props) => {
   return (
     <Container >
       <div>
